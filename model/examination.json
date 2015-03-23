@@ -1,0 +1,69 @@
+{
+	"examinations": [
+		{
+			"id": 1,
+			"name": "Exame A",
+			"result": "Normal",
+			"doctor": {
+				"id": 11,
+				"name": "Joao Silva",
+				"CRM": "1234"
+			},
+			"patient":{
+				"id": 111,
+				"name": "Carlos Alberto"
+			}
+
+		},
+
+		{
+			"id": 2,
+			"name": "Exame B",
+			"result": "Positivo",
+			"doctor": {
+				"id": 22,
+				"name": "Claudio Abreu",
+				"CRM": "1234"
+			},
+			"patient":{
+				"id": 222,
+				"name": "Maria da Gloria"
+			}
+
+		},
+
+		{
+			"id": 3,
+			"name": "Exame C",
+			"result": "Negativo",
+			"doctor": {
+				"id": 33,
+				"name": "Pedro Lima",
+				"CRM": "1234"
+			},
+			"patient":{
+				"id": 333,
+				"name": "Flavio Assunção"
+			}
+
+		},
+
+		{
+			"id": 4,
+			"name": "Exame D",
+			"result": "Baixo",
+			"doctor": {
+				"id": 44,
+				"name": "Claudia di Stefano",
+				"CRM": "1234"
+			},
+			"patient":{
+				"id": 444,
+				"name": "Lucas Lima"
+			}
+
+		}
+
+
+	]
+}
