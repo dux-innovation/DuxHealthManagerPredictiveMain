@@ -3,8 +3,8 @@
     controllerName="dux.view.Detail"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-
-    <Page
+  
+      <Page
         showNavButton="false"
         title="{i18n>SecondPageTitle}">
         <ObjectHeader
@@ -20,5 +20,7 @@
             </attributes>
         </ObjectHeader>
     </Page>
+
+    
 
 </mvc:View>

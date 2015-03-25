@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Estados', 'Perpectiva Dengue'],        
+            ['BR-AL', 140],
+            ['BR-AC', 40],
+            ['BR-AP', 70],
+            ['BR-AM', 450],
+            ['BR-BA', 690],
+            ['BR-CE', 500], 
+            ['BR-ES', 240],
+            ['BR-GO', 100],
+            ['BR-MA', 490],
+            ['BR-MT', 200],
+            ['BR-MS', 300],
+            ['BR-MG', 700],
+            ['BR-PA', 600],
+            ['BR-PB', 89],
+            ['BR-PR', 210],
+            ['BR-PE', 105],
+            ['BR-PI', 404],
+            ['BR-RJ', 330],
+            ['BR-RN', 570],
+            ['BR-RS', 120],
+            ['BR-RO', 800],
+            ['BR-RR', 670],
+            ['BR-SC', 400],
+            ['BR-SP', 834],
+            ['BR-SE', 670],
+            ['BR-TO', 200], 
+            ['BR-DF', 100]
+        
+        ]);
+
+        var options = {
+          region: 'BR',
+          resolution: 'provinces'
+
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

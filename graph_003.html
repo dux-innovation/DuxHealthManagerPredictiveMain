@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+
+    <script type="text/javascript">
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Realizado', 'Projetado'],
+         
+          ['2011',  600,      620],
+          ['2012',  450,      490],
+          ['2013',  400,      420],
+          ['2014',  600,      630],
+          ['2015',  500,      540],
+          ['2016',  0,      440],
+          ['2017',  0,      320],
+          ['2018',  0,      220],
+          ['2019',  0,      210],
+          ['2020',  0,      290],
+          ['2021',  0,      320]
+        ]);
+
+        var options = {
+          title: 'Casos de Infarto Projetado X Realizado',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>

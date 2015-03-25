@@ -1,8 +1,25 @@
+
 sap.ui.controller("dux.view.Master", {
-
+	
+	handleNavBack : function (evt) {
+		window.location.assign("../DuxHealthManagerDashboard");
+	},
+	
     handleListSelect: function(oEvent) {
-        this.navigation.navTo("idViewRoot--idViewDetail", oEvent.getParameter("listItem").getBindingContext());
-    }
-
-
+    	console.log( oEvent.getParameter("listItem").getBindingContext());
+    	if(oEvent.getParameter("listItem").getBindingContext().sPath == '/examinations/0' ){
+    		this.navigation.navTo("idViewRoot--idViewReport001");
+		}
+    	else if(oEvent.getParameter("listItem").getBindingContext().sPath == '/examinations/1' ){
+    		this.navigation.navTo("idViewRoot--idViewReport002");    		
+    	}
+    	else if(oEvent.getParameter("listItem").getBindingContext().sPath == '/examinations/2' ){
+    		this.navigation.navTo("idViewRoot--idViewReport003");    		
+    	}
+    	else{
+    		this.navigation.navTo("idViewRoot--idViewDetail");
+    	}
+   }
 });
+
+
