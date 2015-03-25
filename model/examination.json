@@ -1,0 +1,36 @@
+{
+	"examinations": [
+		{
+			"id": 1,
+			"name": "Probabilidade Doenças"	
+		},
+
+		{
+			"id": 2,
+			"name": "Casos Dengue por Região"
+		},
+
+		{
+			"id": 3,
+			"name": "Nível Colesterol X Idade"
+		},
+
+		{
+			"id": 4,
+			"name": "Regiões X Tempo Espera"
+		},
+		
+		{
+			"id": 5,
+			"name": "IMC Crianças"			
+		},
+		
+		{
+			"id": 6,
+			"name": "DST Adolescentes"			
+		}
+
+		
+
+	]
+}

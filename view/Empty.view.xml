@@ -1,0 +1,11 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+    
+                    
+	<Page title="Selecione um relatório" >
+	 
+	 </Page>
+	 
+</mvc:View>

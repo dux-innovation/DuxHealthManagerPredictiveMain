@@ -1,0 +1,45 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:cl="sap.ui.commons.layout"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+    
+                    
+	<Page title="Probabilidade Doenças" >
+	 	<content>
+		 	<html:iframe width="100%" height="500px" src="/DuxHealthManagerPredictiveMain/graph_001.html" frameborder="0"></html:iframe> 
+				 <cl:MatrixLayout columns="3" width="100%">
+					 <cl:MatrixLayoutRow>
+						<cl:MatrixLayoutCell  hAlign="Center" colSpan="1">
+			 			 	<Label text="Selecione o Período para projeção" design="Bold" />
+			 		 	</cl:MatrixLayoutCell>
+			 		 	<cl:MatrixLayoutCell hAlign="Center"  colSpan="1">
+			 				<Label text="Índice de Probabilidade" design="Bold" />
+			   		    </cl:MatrixLayoutCell>
+			   		    <cl:MatrixLayoutCell colSpan="1" />
+			    	</cl:MatrixLayoutRow>
+			    	
+			 		<cl:MatrixLayoutRow>
+			 			<cl:MatrixLayoutCell hAlign="Center"  colSpan="1">
+			 				<Input id="sdate" design="Bold" type="Date" tooltip="Selecione o Período para projeção" valueStateText="Selecione o Período para projeção" width="250px" />
+			 	 		</cl:MatrixLayoutCell>			 	 
+			 	 		<cl:MatrixLayoutCell hAlign="Center"  colSpan="1">
+			 	 			 <Input id="sdate2" design="Bold" value="60%" tooltip="Índice de Probabilidade" valueStateText="Selecione o Período para projeção" width="150px" />
+			 			</cl:MatrixLayoutCell>
+			 			<cl:MatrixLayoutCell colSpan="1" />
+			 	 	</cl:MatrixLayoutRow>
+			 	 	
+			 	 	<cl:MatrixLayoutRow>
+			 			<cl:MatrixLayoutCell colSpan="2" />
+			 		 	 
+			 	 		<cl:MatrixLayoutCell colSpan="1">
+			 	 			 <Button id="MyButton" text="GERAR" press="doIt"/>
+			 			</cl:MatrixLayoutCell>
+			 	 	</cl:MatrixLayoutRow>
+			 	 	
+			    </cl:MatrixLayout>
+  							
+	 	</content>
+	 </Page>
+	 
+</mvc:View>
