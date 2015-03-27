@@ -22,6 +22,9 @@ sap.ui.controller("dux.view.Master", {
     	else if(oEvent.getParameter("listItem").getBindingContext().sPath == '/examinations/4' ){
     		this.navigation.navTo("idViewRoot--idViewReport005");    		
     	}
+    	else if(oEvent.getParameter("listItem").getBindingContext().sPath == '/examinations/5' ){
+    		this.navigation.navTo("idViewRoot--idViewReport006");    		
+    	}
     	else{
     		this.navigation.navTo("idViewRoot--idViewDetail");
     	}

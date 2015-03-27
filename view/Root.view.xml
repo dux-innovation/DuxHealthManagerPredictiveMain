@@ -16,6 +16,7 @@
             <mvc:XMLView viewName="dux.view.Report_003" id="idViewReport003" />
             <mvc:XMLView viewName="dux.view.Report_004" id="idViewReport004" />
             <mvc:XMLView viewName="dux.view.Report_005" id="idViewReport005" />
+            <mvc:XMLView viewName="dux.view.Report_006" id="idViewReport006" />
             <mvc:XMLView viewName="dux.view.Detail" id="idViewDetail" />
         </detailPages>
     </SplitApp>
